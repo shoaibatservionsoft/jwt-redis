@@ -1,0 +1,38 @@
+{
+  "name": "nextchat.backend",
+  "version": "0.1.0",
+  "description": "Chat with AI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "start.live": "nodemon index.js",
+    "add.model": "cp ./src/templates/SampleModel.js ./models/$name.js",
+    "add.controller": "cp ./src/templates/SampleController.js ./controllers/$name.js",
+    "add.validator": "cp ./src/templates/SampleValidator.js ./controller/validators/$name.js"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "nexteat",
+    "backend"
+  ],
+  "author": "Shoaib Amin",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
+    "env-var": "^7.0.1",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.2.3",
+    "node-rsa": "^1.1.1",
+    "redis": "^4.6.15",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
